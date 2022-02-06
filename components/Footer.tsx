@@ -1,13 +1,13 @@
 import Link from "next/link"
 
-const Header = () => {
+const Footer = () => {
     return (
         <div className="header">
              <Link href={'/'} passHref >
-             <p className="logo"> CompanyLogo </p>
+             <p className="logo"> Copy Right </p>
             </Link>
         </div>
     )
 }
 
-export default Header;
+export default Footer;

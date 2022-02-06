@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { InferGetStaticPropsType } from "next"
 import Header from "../components/Header"
+import Footer from "../components/Footer"
 
 
 export interface People {
@@ -20,13 +21,15 @@ const Home = ({people}: InferGetStaticPropsType<typeof getStaticProps>) => {
             <h1 className="people-title"> {e.name} </h1>
             <h2 className="username"> Username: {e.username}</h2>
             <p className="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at lacus dignissim justo sagittis bibendum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed tempus vitae magna sit amet ultrices. Nunc viverra felis non turpis feugiat convallis.</p>
-            <Link href={'/people/' + e.id} key={e.id}>
+            <Link href={'/people/' + e.id} key={e.id} passHref>
               <button className="link-button">View More Info</button>
             </Link>
             </div>
           )
         }
     </div>
+    <div style={{marginBottom:"10vh"}} />
+    <Footer />
     </>
   )
 }

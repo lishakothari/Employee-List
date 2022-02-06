@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 
 export interface People {
@@ -39,16 +40,18 @@ const People = ({people}) => {
     return (
         <>
         <Header />
-        <h1 style={{textAlign:"center", marginTop:"10vh"}}> {`Employee ${people.id} - ${people.name}'s personal info`} </h1>
+        <h1 style={{textAlign:"center", marginTop:"10vh", marginBottom:"-10vh"}}> {`Employee ${people.id} - ${people.name}'s personal info`} </h1>
         <div className="card"> 
             <h2> Name: {people.name} </h2>
             <p> Email: {people.email} </p>
             <p> Website: {people.website} </p>
             <p> Contact: {people.phone} </p>
-            <Link href={'/'}>
+            <Link href={'/'} passHref>
               <button className="link-button">Back</button>
             </Link>
         </div>
+        <div style={{marginBottom:"10vh"}} />
+        <Footer />
         </>
     )
 }
