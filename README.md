@@ -1,3 +1,6 @@
+Employee info webpage created to practice the basics of typescript, dynamic routing in Next Js using special functions and fetching data from an api. 
+API used: https://jsonplaceholder.typicode.com/users
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
