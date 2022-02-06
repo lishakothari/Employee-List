@@ -85,4 +85,10 @@ a {
     display: block;
     text-align: left;
   }
+
+  .people-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    }
 }
